@@ -36,10 +36,15 @@ imprimirNombreMayusculas({ nombre: 'Lilu' })
 
 // En el ejemplo de abajo, de igual manera de declara una variable con LOS ATRIBUTOS deseados del parámetro parseado a la función de igual manera siendo esta variable equivalente al parámetro en si, lo que permite que el console.log pueda acceder al atributo nombre. NOTA: Fijarse que ambos atributos son incluidos dentro de los corchetes de la variable declarada.
 
+
+
+const IMPRIMIR_NOMBRE_Y_EDAD = ({ nombre, edad }) =>
+    console.log(`Hola, me llamo ${nombre.toLocaleUpperCase()} y tengo ${edad} años de edad`)
+
 function imprimeNombreYEdad(persona) {
     var { nombre, edad } = persona
     console.log(`Hola, me llamo ${nombre.toLocaleUpperCase()} y tengo ${edad} años de edad`)
 }
 
-imprimeNombreYEdad(ali)
+IMPRIMIR_NOMBRE_Y_EDAD(ali)
 imprimeNombreYEdad(aurelio)
