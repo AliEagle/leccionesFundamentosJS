@@ -12,7 +12,8 @@ function saludar() {
     console.log(`Hola, mi nombre es ${this.nombre}`)
 }
 
-const saludarAPablo = saludar.bind(pablo)
+// const saludarAPablo = saludar.bind(pablo)
+// const saludarAMariela = saludar.bind(mariela)
 
 /*
 //Closure
